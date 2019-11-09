@@ -89,7 +89,8 @@ const store: StoreOptions<RootState> = {
   },
   getters: {
     toolbox: (state) => state.level.toolbox,
-    gridI: (state) => state.level.grid.exportGrid()
+    gridI: (state) => state.level.grid.exportGrid(),
+    level: (state) => state.level
   },
   modules: {
     optionsModule
